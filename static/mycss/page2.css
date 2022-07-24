@@ -1,0 +1,13 @@
+body{
+    background: linear-gradient(270deg, rgba(177,199,228,1) 0%, rgba(176,200,237,1) 50%, rgba(229,238,250,1) 100%);
+}
+
+.btn-primary{
+    background-color: black;
+    border: black;
+}
+
+.mybtn{
+    background-color: #e5eefa;
+    font-size: large;
+}

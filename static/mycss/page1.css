@@ -1,0 +1,13 @@
+body{
+    /* background: linear-gradient(270deg, rgba(177,199,228,1) 0%, rgba(176,200,237,1) 50%, rgba(229,238,250,1) 100%);             */
+    background: url("background_image.jpg");
+}
+
+.darkbtn{
+    font-size: large;
+}
+#player{
+    height: 90vh;
+    width: 50vh;
+    margin-top: -47%;
+}

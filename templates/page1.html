@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibing</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='mycss/page1.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center"><img class="img-fluid" src="{{ url_for('static',filename='mycss/Banner1.gif')}}" alt="Loading"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 text-center"><video id="video" width="320" height="240" autoplay></video></div>
+            <div class="col-lg-2 align-middle">
+                <button class="btn btn-dark" id="start-camera">Start Camera</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 text-center"> <canvas id="canvas" width="320" height="240"></canvas></div>
+            <div class="col-lg-2 align-middle">
+                <button class="btn btn-dark" id="click-photo" type='Submit' value='Submit'>Click Image</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 align-middle">
+                <form action="/selectArtist" method='POST'>
+                <button class="btn btn-dark darkbtn">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+    <!-- <div class = "container h-25">
+        <img class="img-fluid float-end float-center " id="player" src="{{ url_for('static',filename='mycss/player.jpg')}}" alt="Loading">
+    </div> -->
+
+    <script type="text/javascript" src="{{ url_for('static',filename='myjs/page1.js') }}"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}"></script>
+</body>
+</html>

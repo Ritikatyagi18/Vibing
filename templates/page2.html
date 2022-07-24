@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibing</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='mycss/page2.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center"><img class="img-fluid" src="{{ url_for('static',filename='mycss/Banner2.gif')}}" alt="Loading"></div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 my-3 text-center">
+            <button class="btn mybtn" id="submit" value="submit">Submit</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">A P Dhillon</h5>
+                    <button id="APDhillon" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">A R Rahman</h5>
+                    <button id="ARRahman" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Akhil Sachdeva</h5>
+                    <button id="AkhilSachdeva" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Alka Yagnik</h5>
+                    <button id="AlkaYagnik" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Amit Trivedi</h5>
+                    <button id="AmitTrivedi" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Ammy Virk</h5>
+                    <button id="AmmyVirk" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Amrinder Gill</h5>
+                    <button id="AmrinderGill" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Ankit Tiwari</h5>
+                    <button id="AnkitTiwari" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Anuv Jain</h5>
+                    <button id="AnuvJain" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Arijit Singh</h5>
+                    <button id="ArijitSingh" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Arjun Kanungo</h5>
+                    <button id="ArjunKanungo" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Armaan Malik</h5>
+                    <button id="ArmaanMalik" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Atif Aslam</h5>
+                    <button id="AtifAslam" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">B Praak</h5>
+                    <button id="BPraak" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Badshah</h5>
+                    <button id="Badshah" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Benny Dayal</h5>
+                    <button id="BennyDayal" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Coke Studio</h5>
+                    <button id="CokeStudio" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Darshan Raval</h5>
+                    <button id="DarshanRaval" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Dhvani Bhanushali</h5>
+                    <button id="DhvaniBhanushali" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Diljit Dosanjh</h5>
+                    <button id="Diljit Dosanjh" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Divine</h5>
+                    <button id="Divine" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Gippy Grewal</h5>
+                    <button id="GippyGrewal" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Guri</h5>
+                    <button id="Guri" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Guru Randhawa</h5>
+                    <button id="GuruRandhawa" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Harrdy Sandhu</h5>
+                    <button id="HarrdySandhu" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Imran Khan</h5>
+                    <button id="ImranKhan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Jass Manak</h5>
+                    <button id="JassManak" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Javed Ali</h5>
+                    <button id="JavedAli" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Jubin Nautiyal</h5>
+                    <button id="JubinNautiyal" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Kailash Kher</h5>
+                    <button id="KailashKher" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Kaka</h5>
+                    <button id="Kaka" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Karan Aujla</h5>
+                    <button id="KaranAujla" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">KK</h5>
+                    <button id="KK" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Lost Stories</h5>
+                    <button id="LostStories" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Lucky Ali</h5>
+                    <button id="LuckyAli" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Maninder Buttar</h5>
+                    <button id="ManinderButtar" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Mankirt Aulakh</h5>
+                    <button id="MankirtAulakh" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Meet Bros</h5>
+                    <button id="MeetBros" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Mikka Singh</h5>
+                    <button id="MikkaSingh" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Millind Gaba</h5>
+                    <button id="MillindGaba" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Mohit Chauhan</h5>
+                    <button id="MohitChauhan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Neeraj Shridhar</h5>
+                    <button id="NeerajShridhar" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Neeti Mohan</h5>
+                    <button id="NeetiMohan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Neha Kakkar</h5>
+                    <button id="NehaKakkar" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Papon</h5>
+                    <button id="Papon" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Parmish Verma</h5>
+                    <button id="ParmishVerma" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Prateek Kuhad</h5>
+                    <button id="PrateekKuhad" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Pritam</h5>
+                    <button id="Pritam" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Rahat Fateh Ali Khan</h5>
+                    <button id="RahatFatehAliKhan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Ritviz</h5>
+                    <button id="Ritviz" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+                        <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sanam</h5>
+                    <button id="Sanam" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Shaan</h5>
+                    <button id="Shaan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Shankar Mahadevan</h5>
+                    <button id="ShankarMahadevan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sharry Mann</h5>
+                    <button id="SharryMann" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Shreya Ghoshal</h5>
+                    <button id="ShreyaGhoshal" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sonu Nigam</h5>
+                    <button id="SonuNigam" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sukhvir</h5>
+                    <button id="Sukhvir" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sukhwinder Singh</h5>
+                    <button id="SukhwinderSingh" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sunidhi Chauhan</h5>
+                    <button id="SunidhiChauhan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Tanishk Bhagchi</h5>
+                    <button id="TanishkBhagchi" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">The PropheC</h5>
+                    <button id="ThePropheC" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Udit Narayan</h5>
+                    <button id="UditNarayan" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Vishal Shekhar</h5>
+                    <button id="VishalShekhar" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">When Chai Met Toast</h5>
+                    <button id="WhenChaimetToast" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Yo Yo Honey Singh</h5>
+                    <button id="YoYoHoneySingh" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Alan Walker</h5>
+                    <button id="AlanWalker" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Anne Marie</h5>
+                    <button id="AnneMarie" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Avicii</h5>
+                    <button id="Avicii" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Beyonce</h5>
+                    <button id="Beyonce" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Bruno mars</h5>
+                    <button id="BrunoMars" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Camila Cabello</h5>
+                    <button id="CamilaCabello" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Charlie Puth</h5>
+                    <button id="CharliePuth" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">DJ Snake</h5>
+                    <button id="DJSnake" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Doja Cat</h5>
+                    <button id="DojaCat" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Dua Lipa</h5>
+                    <button id="DuaLipa" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">ED Sheeran</h5>
+                    <button id="EDSheeran" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Enrique Lglesiaf</h5>
+                    <button id="Enriquelglesia" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Halsey</h5>
+                    <button id="Halsey" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Harry Styles</h5>
+                    <button id="HarryStyles" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Imagine Dragons</h5>
+                    <button id="ImagineDragons" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Jeremy Zucker</h5>
+                    <button id="JeremyZucker" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Joji</h5>
+                    <button id="Joji" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Justin Bieber</h5>
+                    <button id="JustinBieber" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Katy Perry</h5>
+                    <button id="KatyPerry" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Lady Gaga</h5>
+                    <button id="LadyGaga" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Lana DelRy</h5>
+                    <button id="LanaDelRy" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Maroon 5</h5>
+                    <button id="Maroon5" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Mylie Cyrus</h5>
+                    <button id="MylieCyrus" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Nick Jonas</h5>
+                    <button id="NickJonas" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">One Direction</h5>
+                    <button id="OneDirection" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Post Malone</h5>
+                    <button id="PostMalone" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Selena Gomez</h5>
+                    <button id="SelenaGomez" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Shakira</h5>
+                    <button id="Shakira" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Shawn Mendes</h5>
+                    <button id="ShawnMendes" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Sia</h5>
+                    <button id="Sia" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Taylor Swift</h5>
+                    <button id="TaylorSwift" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">The Chain Smokers</h5>
+                    <button id="TheChainsmokers" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">The Weeknd</h5>
+                    <button id="TheWeeknd" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Travis Scott</h5>
+                    <button id="TravisScott" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-3">
+                <div class="card mx-2 my-4 p-1" style="width: 18rem;">
+                    <div class="card-body">
+                    <h5 class="card-title">Zayn Malik</h5>
+                    <button id="ZaynMalik" onclick="artist_click(this.id)" class=" btn btn-primary" >Select</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 text-center"><img class="img-fluid" src="{{ url_for('static',filename='mycss/Footer.gif')}}" alt="Loading"></div>
+    </div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='myjs/page2.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/bootstrap.bundle.js') }}"></script>
+</body>
+</html>

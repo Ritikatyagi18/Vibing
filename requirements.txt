@@ -1,0 +1,9 @@
+Flask==2.1.2
+spotipy==2.20.0
+pandas==1.4.3
+keras==2.9.0
+numpy==1.23.0
+Flask-Session==0.4.0
+opencv-python==4.6.0.66
+Pillow==9.2.0
+urllib3==1.26.9
