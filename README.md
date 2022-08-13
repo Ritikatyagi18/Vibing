@@ -1,4 +1,4 @@
-# Vibing - Let's vibe with music🚀
+# Vibing - Let's vibe with music 🎼
 
 Through Vibing we are trying to achieve music recommendation based on user's emotion which is detected using machine learning technique. 
 
