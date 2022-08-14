@@ -28,4 +28,4 @@ Through Vibing we are trying to achieve music recommendation based on user's emo
 
 ## Feedback
 
-If you have any feedback, please reach out to us at shreya058mca21@igdtuw.ac.in
+If you have any feedback, please reach out to us at vibingproject@gmail.com
